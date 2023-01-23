@@ -45,49 +45,49 @@ Gerald kann mit unserem System seinen Computer steuern. Über den Computer kann 
 
 ## Unsere Komponenten
 
-Für unsere Lösung haben wir folgende Komponente verwendet:
+Für unsere Lösung haben wir folgende Komponenten verwendet:
 
 **FlipMouse**\
 Ermöglicht den Zugriff auf die Maus (bewegen in x- und y-Richtung, Links- und Rechtsklick)
 
 
-**Fabi**\
-Lautstärke vom Computer steuern $$$
+**FABI**\
+Mithilfe des FABI kann die Systemlautstärke stummgeschalten und entstummt werden. Aufgrund einer Zeichenbegrenzung bei den Makros des FABI ist die momentan leider nur mithilfe von drei Knöpfen möglich.
 
 **Asterics Grid**\
 Für die Umgebungssteuerung.\
 Ermöglicht den Zugriff über ein visuelles Bedienpult auf:
 - Licht an/aus
 - Jalousien rauf/runter
-- Fernseher (an/aus, Nummer-Tasten, Lautstärke)
+- Fernseher (an/aus, Nummer-Tasten, Lautstärke, Sender wechseln, Menü)
 - Musik (Spotify)
 
-**Asterics ARE**\
-$
+**Asterics Runtime Enviroment (ARE)**\
+Das Asterics Runtime Enviroment ermöglicht den Zugriff des Asterics Grids auf OpenHab und damit auch auf die Umgebungssteuerung. Des Weiteren wird auch der Zugriff auf den IRTrans Server ermöglicht.
 
 **IR TRANS (Infrarot Transmitter and Receiver)**\
-Steuerung des Fernsehers über Infrarot-Signale. (Signale wurden vorher eingelesen von der Hauptfernbedienung $$$$)
+Mithilfe des IR Trans wurden die Infrarotsignale der Originalen Fernbedienung des Fernsehers aufgezeichnet. Diese können mithilfe des IR Trans Servers und dem IR Trans wiedergegeben werden und den Fernseher steuern. Der Zugriff auf die Daten erfolgt über das Asterics Runtime Enviroment.
 
 **Link zu Windows**\
-Verbindung vom Computer zum Smartphone. Dabei wird der Smartphone-Bildschirm auf dem Computer dargestellst. 
+Verbindung vom Computer zum Android-Smartphone. Dabei kann auf SMS, Anrufliste, Benachrichtigungen und den Smartphone Bildschirm zugegriffen werden.
 
 **Bildschirmtastatur**\
-Digitale Tastatur. Kann über den Windows-Einstellungen unter dem Punkt _Tastatur_ eingeschaltet werden.
+Digitale Tastatur. Kann über die Windows-Einstellungen unter dem Punkt _Tastatur_ eingeschaltet werden. Durch die Kombination eben dieser und der Flipmouse kann eine Tastatur simuliert werden.
 
 **OpenHab**\
-$$$$
+Mithilfe von OpenHab können die im OpenHabserver des Labors eingebundenen Geräte (Lampen, Jalousien etc.) gesteuert werden. Mithilfe des Aserics Grid und der ARE kann so die Umgebung relativ einfach gesteuert werden - siehe ARE.
 
 
 ## Bedienung und Nachvollziehbarkeit unseres Lösungsansatzes
 
-Die _Flipmouse_ haben wir verwendet, als Ersatz einer physischen Maus. Gerald kann  seine Hände nicht für eine physische Maus verwenden, jedoch verfügt er die Funktion über seinen Mund(bewegen, pusten, saugen). Mit dem Mund kann er dann über die Flipmaus den Windows-Mauszeiger in alle Richtungen steuern. Mit dem Pusten und Saugen kann ein Rechts- bzw. Linksklick simuliert werden. 
+Die _Flipmouse_ haben wir verwendet, als Ersatz für eine physische Maus. Gerald kann seine Hände nicht für eine physische Maus verwenden, jedoch verfügt er über generelle Mundfunktionen(bewegen, pusten, saugen). Mit dem Mund kann er dann über die Flipmaus den Windows-Mauszeiger in alle Richtungen steuern. Mit dem Pusten und Saugen kann ein Rechts- bzw. Linksklick simuliert werden. In unserem Fall wird aus hygienischen Gründen das saugen und pusten durch zwei Knöpfe getauscht.
 
 Screenshots von FlipMouse und ihre Einstellung $$$$$$$
 
 Für die Einstellung von der Flipmouse haben wir folgende Seite verwendet:\
 <https://flipmouse.asterics.eu/index_fm.htm#tabStick>
 
-Mit der integrierten _Windows-Bildschirmtastatur_ hat Gerald dann die Möglichkeit, auf seine Tastatur über die Flipmouse zuzugreifen. Die Tastatur kann über den Einstellungen eingeschaltet werden. Dadurch kann man zum Beispiel über die Flipmouse mit der Bildschirmtastatur E-Mails schreiben.
+Mit der integrierten _Windows-Bildschirmtastatur_ hat Gerald dann die Möglichkeit, auf seine Tastatur über die Flipmouse zuzugreifen. Die Tastatur kann über die Einstellungen eingeschaltet werden. Dadurch kann man zum Beispiel über die Flipmouse mit der Bildschirmtastatur E-Mails schreiben.
 
 ![alt text] (./Screenshots/Mail_Bildschirmtastatur.png?raw=true "Windows Bildschirmtastur Mail-Schreiben") 
 
@@ -95,7 +95,7 @@ Da er Zugriff auf sein gesamtes Computer-System hat, wurde sein Computer so eing
 
 Mit einem _Asterics-Grid_ (https://grid.asterics.eu/#grids) kann er über ein visuelles Bedienpult mit Bildern und Beschriftungen das Licht im Wohnzimmer ein- und ausschalten, Fernseher bedienen, Spotify öffnen und Jalousien öffnen und schließen. 
 
-![alt text] (./Screenshots/Grid_Home.png?raw=true "Asterics Grid Home") 
+![Alt text] (./Screenshots/Grid_Home.png)
 
 
 
