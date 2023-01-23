@@ -134,7 +134,7 @@ _IR-Trans_ ermöglicht es uns Infrarotsignale aufzunehmen und nach beliebiger Ze
 
 
 Das _Asterics Runtime Enviroment_ oder kurz _ARE_ ermöglicht uns Befehle vom Asterics Grid an die verarbeitenden Endstellen (Openhab Server oder IR Trans Server). Es ist die Schnittstelle zwischen dem Nutzer und dem verarbeitenden Programm.
-![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/ARE_Main.png?raw=true "ARE Main") 
+![Alt text](./Screenshots/ARE_Main.png?raw=true "ARE Main") 
 
 
 
