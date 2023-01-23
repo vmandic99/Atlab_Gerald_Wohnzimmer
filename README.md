@@ -82,8 +82,6 @@ Mithilfe von OpenHab können die im OpenHabserver des Labors eingebundenen Gerä
 
 Die _Flipmouse_ haben wir verwendet, als Ersatz für eine physische Maus. Gerald kann seine Hände nicht für eine physische Maus verwenden, jedoch verfügt er über generelle Mundfunktionen(bewegen, pusten, saugen). Mit dem Mund kann er dann über die Flipmaus den Windows-Mauszeiger in alle Richtungen steuern. Mit dem Pusten und Saugen kann ein Rechts- bzw. Linksklick simuliert werden. In unserem Fall wird aus hygienischen Gründen das saugen und pusten durch zwei Knöpfe getauscht.
 
-Screenshots von FlipMouse und ihre Einstellung $$$$$$$
-
 Für die Einstellung von der Flipmouse haben wir folgende Seite verwendet:\
 <https://flipmouse.asterics.eu/index_fm.htm#tabStick>
 
@@ -138,7 +136,6 @@ Das _Asterics Runtime Enviroment_ oder kurz _ARE_ ermöglicht uns Befehle vom As
 
 
 
-##FittsTask2D## $$$$$$
 
 
 
