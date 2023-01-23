@@ -89,27 +89,27 @@ Für die Einstellung von der Flipmouse haben wir folgende Seite verwendet:\
 
 Mit der integrierten _Windows-Bildschirmtastatur_ hat Gerald dann die Möglichkeit, auf seine Tastatur über die Flipmouse zuzugreifen. Die Tastatur kann über die Einstellungen eingeschaltet werden. Dadurch kann man zum Beispiel über die Flipmouse mit der Bildschirmtastatur E-Mails schreiben.
 
-![Alt text] (./Screenshots/Mail_Bildschirmtastatur.png?raw=true "Windows Bildschirmtastur Mail-Schreiben") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/Mail_Bildschirmtastatur.png?raw=true "Windows Bildschirmtastur Mail-Schreiben") 
 
 Da er Zugriff auf sein gesamtes Computer-System hat, wurde sein Computer so eingerichtet, dass die restlichen gewünschten Funktionen auch über diesen durchgeführt werden können.
 
 Mit einem _Asterics-Grid_ (https://grid.asterics.eu/#grids) kann er über ein visuelles Bedienpult mit Bildern und Beschriftungen das Licht im Wohnzimmer ein- und ausschalten, den Fernseher bedienen, Spotify öffnen und die Jalousien öffnen und schließen. (siehe OpenHab und IR Trans)
 
-![Alt text] (./Screenshots/Grid_Home.png?raw=true)
-![Alt text] (./Screenshots/Grid_OpenHab_Innenleben.png?raw=true "Detailansicht OpenHab") 
-![Alt text] (./Screenshots/Grid_Fernseher_Innenleben.png?raw=true "Detailansicht Fernseher") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/Grid_Home.png?raw=true)
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/Grid_OpenHab_Innenleben.png?raw=true "Detailansicht OpenHab") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/Grid_Fernseher_Innenleben.png?raw=true "Detailansicht Fernseher") 
 
 
 Bedienpult seiner digitalen Fernbedienung:
-![Alt text] (./Screenshots/Grid_Fernseher.png?raw=true "Asterics Grid Fernseher") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/Grid_Fernseher.png?raw=true "Asterics Grid Fernseher") 
 
 Über den _IR-Trans_ werden Signale über Infrarot vom Grid zum Fernseher gesendet. Die Befehle wurden zuvor mithilfe der originalen Fernbedienung aufgenommen und in einer Datenbank gespeichert (ATLAB.rem). Über diese Datenbank kann der IR Trans-Server auf die befehle zugreifen und diese an den IR Trans gesendet werden. Dieser gibt die Befehle wieder und steuert somit den Fernseher an.
 
 Mit dem Programm _Link zu Windows_ kann Gerald mit seinem Computer sein Android-Smartphone steuern. Dabei kann der Bildschirm des Handys auf den Computer übertragen werden. Es können auch einfach nur die Anrufliste/SMS/Benachrichtigungen angezeigt werden. Über die Flipmouse kann er dann das Handy bedienen (Anrufe tätigen, SMS schreiben). 
 
-![Alt text] (./Screenshots/Windows_Link_Calls_Censored.png?raw=true "Windows Link Anruf") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/Windows_Link_Calls_Censored.png?raw=true "Windows Link Anruf") 
 
-![Alt text] (./Screenshots/Windows_Link_Messages_Censored.png?raw=true "Windows Link SMS") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/Windows_Link_Messages_Censored.png?raw=true "Windows Link SMS") 
 
 Mit dem _FABI_ kann durch Makros das System Audio stummgeschalten werden, bzw. die Stummschaltung aufgehoben werden. Ein Zeichenlimit des FABI Makros und ein Fehler der es dem FABI nicht ermöglicht "\" einzugeben verpflichtet uns hierbei allerdings dazu drei Knöpfe zu verwenden um die Befehlsreihenfolge auszuführen. 
 Der erste Knopf ist in diesem Fall dafür verantwortlich die Windows Kommandozeile zu öffnen und damit ein im User directory gespeichertes File names atlab.txt zu öffnen. 
@@ -117,12 +117,12 @@ Der zweite Knopf kopiert den gesamten im File vorhandenen Text und schließt die
 Der dritte Knopf fügt den kopierten Text in die Kommandozeile ein und nutzt einen Befehl der NirCMD Library um festzustellen ob das Systemaudio stummgeschalten ist oder nicht.
 Dadurch, dass das Bewegen seiner Arme kein Problem ist, kann er die leichtgängigen FABI Knöpfe mit einfachen Armbewegungen drücken.
 
-![Alt text] (./Screenshots/FABI_Conf.png?raw=true "FABI Config") 
-![Alt text] (./Screenshots/FABI_Slots.png?raw=true "FABI Slots") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/FABI_Conf.png?raw=true "FABI Config") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/FABI_Slots.png?raw=true "FABI Slots") 
 
-![Alt text] (./Screenshots/FABI_Bu3.png?raw=true "FABI Button 3") 
-![Alt text] (./Screenshots/FABI_Bu4.png?raw=true "FABI Button 4") 
-![Alt text] (./Screenshots/FABI_Bu5.png?raw=true "FABI Button 5") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/FABI_Bu3.png?raw=true "FABI Button 3") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/FABI_Bu4.png?raw=true "FABI Button 4") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/FABI_Bu5.png?raw=true "FABI Button 5") 
 
 
 
@@ -130,11 +130,11 @@ _Openhab_ ermöglicht die Einbindung von Smart-Electronics (z.B. Lampen, Heizung
 
 _IR-Trans_ ermöglicht es uns Infrarotsignale aufzunehmen und nach beliebiger Zeit wiederzugeben. Hierbei wurden die Kernfunktionen der Fernbedienung des Fernsehers aufgezeichnet und in einer Datenbank abgespeichert. Die Befehle wurden benannt und können durch die ARE an den IR-Trans Server gesendet werden. Der Server verarbeitet die Anfrage und sendet den abgespeicherten Infrarotbefehl aus, welcher vom Fernseher verstanden wird. Über das Asterics Grid kann der Nutzer der ARE mitteilen, welcher Befehl an den Server gesendet werden soll.
 
-![Alt text] (./Screenshots/ARE_IRTrans.png?raw=true "IR Trans") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/ARE_IRTrans.png?raw=true "IR Trans") 
 
 
 Das _Asterics Runtime Enviroment_ oder kurz _ARE_ ermöglicht uns Befehle vom Asterics Grid an die verarbeitenden Endstellen (Openhab Server oder IR Trans Server). Es ist die Schnittstelle zwischen dem Nutzer und dem verarbeitenden Programm.
-![Alt text] (./Screenshots/ARE_Main.png?raw=true "ARE Main") 
+![Alt text] (Atlab_Gerald_Wohnzimmer/Screenshots/ARE_Main.png?raw=true "ARE Main") 
 
 
 
